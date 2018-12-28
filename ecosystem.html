@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Info Tech Term Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <!--- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style media="screen">
+  .jumbotron {
+    border: 1px solid black;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 30px;
+    background-color:lightblue;
+  }
+  body{
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+  }
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-caption{
+    font-size: 26px;
+  }
+  #rightSidebar{
+    border-color:red;
+  }
+  #rightSidebar,a{
+    color:Gray;
+  }
+  </style>
+  <script>
+  var image_1 = new Image(100,100);
+  image_1.src = "./images/innovation-sm.jpg";
+  var image_1_over = new Image(100,100);
+  image_1_over.src = "./images/case-studies-darden-sm.jpg";
+
+  var image_2 = new Image(100,100);
+  image_2.src = "./images/clients-speak-kraft-sm.png";
+  var image_2_over = new Image(100,100);
+  image_2_over.src = "./images/clients-speak-follett-sm.png";
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand -->
+      <!--      <a class="navbar-brand" href="#">Logo</a>  -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="navbar-brand" href="home.html"><img src="./images/Stylus-logo-sm.jpg" alt="Stylus logo"</a>
+            </li
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Services
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="servicesOverview.html">Services-Overview</a>
+                <a class="dropdown-item" href="openSourceReport.html"> Open Source</a>
+                <a class="dropdown-item" href="techTools.html"> Tech - Tools</a>
+                <a class="dropdown-item" href="techToolsResult.php">Tech - Tools - Result</a>
+              </div>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbardrop" data-toggle="dropdown">
+                Innovation
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="innovationOverView.html">Innovation Over View</a>
+                <a class="dropdown-item active" href="ecosystem.html"> Ecosystem </a>
+                <a class="dropdown-item" href="showcase.html"> Showcase </a>
+                <!--          <a class="dropdown-item" href="#">Interest3</a>  -->
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="jumbotron">
+        <h1>Stylus Technologies</h1>
+        <p></p>
+      </div>
+      <!--  <body> -->
+      <div id="mainContent">
+        <div class="row">
+          <div class="col-sm-4 col-sm-8">
+            <h1>Innovation Ecosystem</h1>
+            <!--col-md-8 col-lg-9 -->
+            <main>
+              <figure class="floatLeft">
+                <img src="./images/innovation-sm.jpg" name="img1" width="100" height="100" alt="Innovation" onmouseover="document.img1.src = image_1_over.src"
+                onmouseout="document.img1.src = image_1.src">
+              </figure>
+              <p class="blueText">Innovation at Stylus Technologies takes place at the intersection of technologies, industries and geographies. It involves collaboration with customers, partners, employees, consortia, academia and the crowd to build new and relevant solutions. It also involves co-innovation with customers with services such as gain share labs, labs-on-hire and elements, which impact development and innovation. We seek to innovate in a way that minimizes the gap between our offerings and client needs, until both are at zero distance from one another. For us, innovation is a quest for a client problem that is as yet unarticulated, or finding that surprisingly innovative way to execute a solution to a known problem. Organizations are constantly trying to know their customers better. Gaining a single view of customers, irrespective of the channel they chose to interact through, can be challenging but can go a long way in helping understand what customers really want.</p>
+            </main>
+          </div>
+          <br>
+          <div class="col-md-4 col-lg-3">
+            <div id="rightSidebar">
+              <aside class="">
+                <h2 class="aside">
+                  <ul>
+                    <h3>Visit</h3>
+                    <li><a  href="home.html">Home</a></li>
+                    <li><a  href="servicesOverview.html">services Over View</a></li>
+                    <li><a  href="openSourceReport.html"> Open Source</a></li>
+                    <li><a  href="techTools.html"> Tech - Tools</a></li>
+                    <li><a  href="techToolsResult.php">Tech - Tools - Result</a></li>
+                    <li><a  href="innovationOverView.html">Innovation Over View</a></li>
+                    <li><a  href="showcase.html"> Showcase </a></li>
+                    <li><a href="about.html">About </a></li>
+                  </ul>
+                </h2>
+                <!-- style="color:MediumSeaGreen; font-size:12px" -->
+              </aside>
+            </div>
+          </div>
+          <div class="">
+            <h3>Teaching Innovation Technologies and Languages</h3>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3u1fu6f8Hto" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!-- container fluid -->
+    <footer>Created for InfoTech Class 550</footer>
+</body>
+</html>

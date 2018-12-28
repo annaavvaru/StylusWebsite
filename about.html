@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Info Tech Term Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <!--- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!--  <link rel="stylesheet" href="styles.css"> -->
+  <style media="screen">
+    body{
+      max-width: 1200px;
+      min-width: 320px;
+      margin: auto;
+    }
+    #pageContent {
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 12px;
+      margin-top: 10px;
+      margin-left: 50px;
+      width: 800px;
+    }
+    /*& Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+     .floatLeft {
+      float: left;
+    }
+    .floatRight {
+      float: right;
+    }
+    footer {
+      font-size: 10px;
+      border-top-width: thin;
+      border-top-style: solid;
+      border-top-color: #666;
+    }
+    #map {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+  <script>
+    var image_1 = new Image(100,100);
+    image_1.src = "./images/artificialIntel-sm.jpg";
+    var image_1_over = new Image(100,100);
+    image_1_over.src = "./images/Analytics-AI-sm.jpg";
+
+    var image_2 = new Image(100,100);
+    image_2.src = "./images/Pain-Route-To-Analytics-sm.jpg";
+    var image_2_over = new Image(100,100);
+    image_2_over.src = "./images/Big-Data-Platforms-sm.jpg";
+  </script>
+  <!-- form scrip and style end -->
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand -->
+      <!--      <a class="navbar-brand" href="#"><img src="./images/Stylus-logo-sm.jpg" alt="Stylus logo"
+    </a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="navbar-brand" href="home.html"><img src="./images/Stylus-logo-sm.jpg" alt="Stylus logo"</a>
+          </li
+          <li class="nav-item">
+            <a class="nav-link " href="home.html">Home</a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Services
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="servicesOverview.html">Services-Overview</a>
+              <a class="dropdown-item" href="openSourceReport.html"> Open Source</a>
+              <a class="dropdown-item" href="techTools.html"> Tech - Tools</a>
+              <a class="dropdown-item" href="techToolsResult.php">Tech - Tools - Result</a>
+            </div>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Innovation
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="innovationOverView.html">Innovation Over View</a>
+              <a class="dropdown-item" href="ecosystem.html"> Ecosystem </a>
+              <a class="dropdown-item" href="showcase.html"> Showcase </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Slide slideshow  -->
+    <div id="slideshow" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+        <li data-target="#slideshow" data-slide-to="1"></li>
+        <li data-target="#slideshow" data-slide-to="2"></li>
+      </ul>
+      <!-- The slideshow  "1950" height="1050"-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/work-in-teams1.jpg" alt="work-in-teams" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>About Us</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/portal-career1.jpg" alt="portal-career" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>We know that our differences make <br>all the difference.</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/be-the-navigator.jpg" alt="be-the-navigator" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>Be the navigator</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#slideshow" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div> <!--Slide slideshow end  -->
+
+    <!--<div id="pageContent"> -->
+    <div class="row"> <!-- 1st  row -->
+      <div class="col-md-8 col-lg-9">
+        <main>
+          <h2>Overview</h2>
+          <div class="row">
+            <div class="col-md-6 col-lg-12" >
+              <p>  With over three decades of experience in managing the systems and workings of global enterprises, Stylus Technologies expertly steer our clients through their digital journey. We do it by enabling the enterprise with an AI-powered core that helps prioritize the execution of change. We also empower the business with agile digital at scale to deliver unprecedented levels of performance and customer delight. Our always-on learning agenda drives their continuous improvement through building and transferring digital skills, expertise, and ideas from our innovation ecosystem. We harness the power of cognitive computing, hyper-automation, robotics, cloud, analytics and emerging technologies to help our clients adapt to the digital world and make them successful.</p>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <aside class="">
+          <h3>Visit</h3>
+          <ul>
+            <li><a href="home.html">Home </a></li>
+            <li><a  href="servicesOverview.html">Services-Overview</a></li>
+            <li><a  href="openSourceReport.html"> Open Source</a></li>
+            <li><a  href="techTools.html"> Tech - Tools</a></li>
+            <li><a  href="techToolsResult.php">Tech - Tools - Result</a></li>
+            <li><a  href="innovationOverView.html">Innovation Over View</a></li>
+            <li><a  href="ecosystem.html"> Ecosystem </a></li>
+            <li><a  href="showcase.html"> Showcase </a></li>
+          </ul>
+        </aside>
+      </div>
+    </div> <!-- 1sr row end -->
+    <div class="row"> <!-- toggle tab row -->
+      <div class="col-md-12 ">
+        <h3>Crowdsourcing</h3>
+        <br>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#item1">Item 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#item2">Item 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#item3">Item 3</a>
+          </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div id="item1" class="container tab-pane active"><br>
+            <h3>Application Design </h3>
+            <p>Turning software requirements into compelling application designs takes time most businesses can’t spare—and UI/UX expertise that can be hard to find. With Topcoder’s application design solutions, you can quickly transform your requirements into beautiful wireframes and app design concepts that let you visualize user experience and test interaction models. A dedicated project manager guides your project to success, and you pay only for outcomes, not hours.Key differentiator would be an effective discovery environment that would enable rapid decision making and implementation of new offerings quickly in the longer run. </p>
+          </div>
+          <div id="item2" class="container tab-pane fade"><br>
+            <h3>Analytics and data science</h3>
+            <figure class="floatLeft">
+              <img src="./images/artificialIntel-sm.jpg" name="img1" width="100" height="100" alt="artificialIntel" onmouseover="document.img1.src = image_1_over.src"
+              onmouseout="document.img1.src = image_1.src" style=" margin-right:15px;">
+            </figure>
+            <p> We seek to innovate in a way that minimizes the gap between our offerings and client needs, until both are at zero distance from one another. For us, innovation is a quest for a client problem that is as yet unarticulated, or finding that surprisingly innovative way to execute a solution to a known problem. Organizations are constantly trying to know their customers better. Gaining a single view of customers, irrespective of the channel they chose to interact through, can be challenging but can go a long way in helping understand what customers really want.</p>
+            <figure class="floatRight">
+              <img src="./images/Pain-Route-To-Analytics-sm.jpg" name="img2" width="100" height="100" alt="Client speak kraft" onmouseover="document.img2.src = image_2_over.src"
+              onmouseout="document.img2.src = image_2.src" style="margin-left:15px;">
+            </figure>
+            <p> Stylus Technologies built a trusted transformation partnership driving positive change for Kraft rollover into “Stylus and Follett” which describes making the future of education happen now. And I added a google map using JavaScript and google embed map. First, I create an account and them asked permission to get embed google map for users to find where Stylus Technologies located. </p>
+          </div>
+          <div id="item3" class="container tab-pane fade"><br>
+            <h3>Stylus Technologies Address</h3>
+            <p>Thank you for your interest in Wipro’s services. Please provide the following information about your business needs to help us serve you better. This information will enable us to route your request to the appropriate person. You should receive a response within 48 hours. </p>
+            <div class="row">
+              <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 ">
+                <aside class="">
+                  <h3>Contact</h3>
+                  Stylus Technologies <br>
+                  Ph:732-234-5678 <br>
+                  NJ-08919 <br>
+                  United States
+                  <button type="button" class="btn btn-primary"> <a href="home.html">Home</a>VistHome </button>
+                </aside>
+              </div>
+              <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 ">
+                <div id="map"></div>
+                <script>
+                  //	40.4612821, -74.4033816
+                  function initMap() {
+                    var stylusTech = {lat: 40.4127731, lng: -74.4164124};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 15,
+                      center: stylusTech
+                    });
+                    var marker = new google.maps.Marker({
+                      position:  stylusTech,
+                      map: map,
+                      title: 'Stylus Technologies'
+                    });
+                  }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0rmkOMgguAYHfSmuAsKFw7NkEBUaCkSY&callback=initMap">
+              </script>
+            </div>
+          </div>
+        </div>
+      </div> <!-- tan content end -->
+    </div>
+  </div> <!-- toggle tab row end -->
+  <!--  </div> first main row-->
+</div>  <!-- container fluid end page content-->
+ <footer>Created for InfoTech Class 550</footer>
+</body>
+</html>

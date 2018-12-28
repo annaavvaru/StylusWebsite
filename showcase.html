@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Info Tech Term Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <!--- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style media="screen">
+  .jumbotron {
+    border: 1px solid black;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 30px;
+    background-color:lightblue;
+  }
+  body{
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+  }
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-caption{
+    font-size: 26px;
+  }
+  #rightSidebar{
+    border-color:blue;
+  }
+  #rightSidebar,a{
+    color:Gray;
+  }
+  </style>
+  <script>
+  var image_1 = new Image(100,100);
+  image_1.src = "./images/artificialIntel-sm.jpg";
+  var image_1_over = new Image(100,100);
+  image_1_over.src = "./images/case-studies-darden-sm.jpg";
+
+  var image_2 = new Image(100,100);
+  image_2.src = "./images/showCase-sm.jpg";
+  var image_2_over = new Image(100,100);
+  image_2_over.src = "./images/clients-speak-follett-sm.png";
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand -->
+      <!--      <a class="navbar-brand" href="#">Logo</a>  -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="navbar-brand" href="home.html"><img src="./images/Stylus-logo-sm.jpg" alt="Stylus logo"</a>
+            </li
+            <li class="nav-item">
+              <a class="nav-link" href="ome.html">Home</a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Services
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="servicesOverview.html">Services-Overview</a>
+                <a class="dropdown-item" href="openSourceReport.html"> Open Source</a>
+                <a class="dropdown-item" href="techTools.html"> Tech - Tools</a>
+                <a class="dropdown-item" href="techToolsResult.php">Tech - Tools - Result</a>
+              </div>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbardrop" data-toggle="dropdown">
+                Innovation
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="innovationOverView.html">Innovation Over View</a>
+                <a class="dropdown-item" href="ecosystem.html"> Ecosystem </a>
+                <a class="dropdown-item active" href="showcase.html"> Showcase </a>
+                <!--          <a class="dropdown-item" href="#">Interest3</a>  -->
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="jumbotron">
+        <h1>Stylus Technologies</h1>
+        <p></p>
+      </div>
+
+      <div id="mainContent">
+        <div class="row">
+          <div class="col-sm-4 col-sm-8">
+            <h1>Innovation Showcase</h1>
+
+            <!--col-md-8 col-lg-9 -->
+            <main>
+
+              <figure class="floatLeft">
+                <img src="./images/artificialIntel-sm.jpg" name="img1" width="100" height="100" alt="Innovation" onmouseover="document.img1.src = image_1_over.src"
+                onmouseout="document.img1.src = image_1.src" style="margin-right:15px;">
+              </figure>
+              <p class="blueText">Innovation at Stylus Technologies takes place at the intersection of technologies, industries and geographies. It involves collaboration with customers, partners, employees, consortia, academia and the crowd to build new and relevant solutions. It also involves co-innovation with customers with services such as gain share labs, labs-on-hire and elements, which impact development and innovation. We seek to innovate in a way that minimizes the gap between our offerings and client needs, until both are at zero distance from one another. For us, innovation is a quest for a client problem that is as yet unarticulated, or finding that surprisingly innovative way to execute a solution to a known problem. Organizations are constantly trying to know their customers better. Gaining a single view of customers, irrespective of the channel they chose to interact through, can be challenging but can go a long way in helping understand what customers really want. Deploy a digital platform that uses advanced technologies to surface new perceptions, understanding and insights around business. Extract deep insights from data with Stylus Technologies’ Data Discovery Platform (DDP) and use sophisticated techniques such as visual sciences and storytelling to simplify interpretation and decision-making. The core of the platform brings together the Stylus Technologies’  Artificial Intelligence PlatformTM and stream computing to deliver wide-ranging insights such as preventive action for customer attrition, predictive maintenance of assets to minimize downtime and practices to reinforce online reputation.</p>
+              <figure class="floatRight">
+                <img src="./images/showCase-sm.jpg" name="img2" width="100" height="100" alt="showCase" onmouseover="document.img2.src = image_2_over.src"
+                onmouseout="document.img2.src = image_2.src" style="margin-left:15px;">
+              </figure>
+
+              <p class="blueText"> Deploy a digital platform that uses advanced technologies to surface new perceptions, understanding and insights around business. Extract deep insights from data with Stylus Technologies’ Data Discovery Platform (DDP) and use sophisticated techniques such as visual sciences and storytelling to simplify interpretation and decision-making. The core of the platform brings together the Stylus Technologies’  Artificial Intelligence PlatformTM and stream computing to deliver wide-ranging insights such as preventive action for customer attrition, predictive maintenance of assets to minimize downtime and practices to reinforce online reputation.  </p>
+
+            </main>
+          </div>
+          <br>
+          <div class="col-md-4 col-lg-3">
+            <div id="rightSidebar">
+              <aside class="">
+                <h2 class="aside">
+                  <ul>
+                    <h3>Visit</h3>
+                    <li><a  href="home.html">Home</a></li>
+                    <li><a  href="servicesOverview.html">services Over View</a></li>
+                    <li><a  href="openSourceReport.html"> Open Source</a></li>
+                    <li><a  href="techTools.html"> Tech - Tools</a></li>
+                    <li><a  href="techToolsResult.php">Tech - Tools - Result</a></li>
+                    <li><a  href="innovationOverView.html">Innovation Over View</a></li>
+                    <li><a  href="ecosystem.html"> Ecosystem </a></li>
+                    <li><a href="about.html">About </a></li>
+                  </ul>
+                </h2>
+                <!-- style="color:MediumSeaGreen; font-size:12px" -->
+              </aside>
+            </div>
+          </div>
+        </div> <!--1st row close -->
+      </div> <!-- pageContent colse -->
+      <br>
+      <h2> Our Expertise</h2>
+      <br>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h4>Innovation</h4>
+              <img class="img-fluid rounded-circle" data-toggle="collapse" data-target="#image4"
+              src="./images/innovation-sm.jpg" alt="Innovation" width="600" height="600">
+              <div id="image4" class="collapse">
+                <p>convenient to use, supports interactive and intuitive learning experiences can transform the talent of an organization to be more productive. If used correctly, this can not only help businesses to generate insights which can help them unlock new business avenues but also help them provide solution for better governance.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-4 ">
+          <div class="card">
+            <div class="card-body text-center">
+              <h4>ShowCase</h4>
+              <img class="img-fluid rounded-circle" data-toggle="collapse" data-target="#image5"
+              src="./images/showCase-sm.jpg" alt="ShowCase" width="600" height="600">
+              <div id="image5" class="collapse">
+
+                <p> Have you ever imagined the amount of data that is churned out every day? Well, the answer is it runs into quintillion bytes every single day. This data is generated across industries whether it is from retail, banking, insurance, healthcare, power, oil and gas, telecom and the list can go on.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-4 ">
+          <div class="card">
+            <div class="card-body text-center">
+              <h4>ArtificialIntel</h4>
+              <img class="img-fluid rounded-circle" data-toggle="collapse" data-target="#image6"
+              src="./images/artificialIntel-sm.jpg" alt="ArtificialIntel" width="600" height="600">
+              <div id="image6" class="collapse">
+                <p>To overcome above challenges, organizations are looking for structured ways and means to standardize the governance of their BI platforms by rationalizing the existing report inventory, standardizing the BI tools across enterprise, migration to newer BI platform and then setting-up the BI governance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- 2nd row end -->
+    </div>  <!--container fluid end -->
+    <footer>Created for InfoTech Class 550</footer>
+  </body>
+  </html>
